@@ -16,3 +16,8 @@ lint:
 	uv run ruff check brain_games
 
 
+fix:
+	uv run ruff check brain_games --fix
+
+
+
