@@ -9,7 +9,7 @@ def even_games():
         for _ in range(2):
             number = logic.random_int()
             answer = "no"
-            if number % 2 == 0 and number / number == 1:
+            if number % 2 == 0:
                 answer = "yes"
             print(f'Question: {number}')
             ans = prompt.string("Your answer: ")
