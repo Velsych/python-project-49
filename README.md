@@ -7,11 +7,16 @@ Brain games is simple chain of 4-5 grade class questions but u have only one lif
 First game in this list is "Even or no" game, u get absolutely random number and u must answer its even or no
 3 times in a row, otherwise gameover.
 
-**How it look**
+Second game is calculation game, same rules, same punishment if lose ↑_(ΦwΦ)Ψ
+
+__**How it look**__
+1. Even game:
 
 [![asciicast](https://asciinema.org/a/usbBtJCWNy6qQFu2vviQPc9VP.svg)](https://asciinema.org/a/usbBtJCWNy6qQFu2vviQPc9VP)
 
+2. Calc game:
 
+[![asciicast](https://asciinema.org/a/WshiAjrzVi7MeZix3c2KDNWNC.svg)](https://asciinema.org/a/WshiAjrzVi7MeZix3c2KDNWNC)
 
 
 
