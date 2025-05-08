@@ -9,6 +9,8 @@ First game in this list is "Even or no" game, u get absolutely random number and
 
 Second game is calculation game, same rules, same punishment if lose ↑_(ΦwΦ)Ψ
 
+Third game is very difficult game about finding common divide number very complicated and scary, advice to use Euclidean method to find :P
+
 __**How it look**__
 1. Even game:
 
@@ -17,6 +19,10 @@ __**How it look**__
 2. Calc game:
 
 [![asciicast](https://asciinema.org/a/WshiAjrzVi7MeZix3c2KDNWNC.svg)](https://asciinema.org/a/WshiAjrzVi7MeZix3c2KDNWNC)
+
+3. GCD game:
+
+[![asciicast](https://asciinema.org/a/WjNMlrPukdmLov14eLEUX18U2.svg)](https://asciinema.org/a/WjNMlrPukdmLov14eLEUX18U2)
 
 
 

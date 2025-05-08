@@ -6,7 +6,7 @@ def even_games():
     def even_game():
         print('Answer "yes" if the number is even, otherwise answer "no".')
         right_answers = 0
-        for _ in range(2):
+        for _ in range(3):
             number = logic.random_int()
             answer = "no"
             if number % 2 == 0:
@@ -22,5 +22,5 @@ def even_games():
         if right_answers == 3:
             logic.congrats(user_name)
             
-    user_name = input("May i have ur name? ")
+    user_name = logic.hello_username()
     even_game()
