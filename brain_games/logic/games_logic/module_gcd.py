@@ -11,20 +11,20 @@ def gcd_games():
             numbers.append(randint(1, 100))
         return numbers
 
-    def gcd():
-        numbers = random_for_gcd()
+    def gcd(numbers):
         i = max(numbers)
         j = min(numbers)
         while j != 0:
             c = i % j
             i, j = j, c
-        return i, numbers
+        return i 
     
     user_name = logic.hello_username()
     print("Find the greatest common divisor of given numbers.")
     right_answers = 0
     for _ in range(3):
-        answer, numbers = gcd()
+        numbers = random_for_gcd()
+        answer = gcd(numbers)
         a, b = numbers
         print(f"Question {a} {b}")
         ans = prompt.integer("Your answer: ")
