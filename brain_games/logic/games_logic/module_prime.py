@@ -3,6 +3,16 @@ def prime_games():
 
     from brain_games import logic
 
+    def is_prime(num):
+        answer = "yes"
+        if num % 2 == 0:
+            answer = "no"
+        else:
+            for i in range(3, num, 2):
+                if num % i == 0:
+                    answer = "no"
+        return answer
+
     user_name = logic.hello_username()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     
@@ -10,19 +20,12 @@ def prime_games():
     for _ in range(3):
         number = logic.random_int()
         print(f'Question: {number}')
-        answer = "yes"
         ans = prompt.string("Your answer: ")
-        if number % 2 == 0:
-            answer = "no"
-        else:
-            for i in range(3, number, 2):
-                if number % i == 0:
-                    answer = "no"
+        answer = is_prime(number)
         if ans != answer:
             logic.defeat(ans, answer, user_name)
             break
-        if answer == ans:
-            right_answer += 1
+        right_answer += 1
     if right_answer == 3:
         logic.congrats(user_name)                   # god witness i make this very sleepy 
         
