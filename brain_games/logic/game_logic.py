@@ -6,7 +6,7 @@ def random_int():
 
 def defeat(user_answer, right_answer, user_name):
     print(f"""'{user_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.""")
-    print(f'Let`s try again, {user_name}!')
+    print(f"Let's try again, {user_name}!")
 
 
 def congrats(user_name):
