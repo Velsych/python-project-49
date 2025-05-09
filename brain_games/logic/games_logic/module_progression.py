@@ -7,7 +7,8 @@ def progression_games():
         from random import choice, randint
         progression = []
         while len(progression) < 5:
-            progression = [str(i) for i in range(0, randint(5, 50), randint(2, 5))]  # NOSONAR
+            progression = [str(i) for i in range(0,
+             randint(5, 50), randint(2, 5))]  # NOSONAR
         progression = progression[0:10]
         answer = choice(progression)        # NOSONAR
         progression[progression.index(answer)] = ".."

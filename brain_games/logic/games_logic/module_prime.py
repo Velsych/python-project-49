@@ -27,6 +27,6 @@ def prime_games():
             break
         right_answer += 1
     if right_answer == 3:
-        logic.congrats(user_name)                   # god witness i make this very sleepy 
+        logic.congrats(user_name)  # god witness i make this very sleepy 
         
     
