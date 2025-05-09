@@ -13,6 +13,8 @@ Third game is very difficult game about finding common divide number, very compl
 
 Four game is very chill and simple u just need to continue progression ＼(￣▽￣)／
 
+fifth game about finding prime number, u get random number and need to say its prime or no, simple, if u know what prime is(i'm no) (－‸ლ)
+
 __**How it look**__
 1. Even game:
 
@@ -30,9 +32,23 @@ __**How it look**__
 
 [![asciicast](https://asciinema.org/a/7Lm9jZmEKppnq2sxlQmPO4N8C.svg)](https://asciinema.org/a/7Lm9jZmEKppnq2sxlQmPO4N8C)
 
+5. Prime or no game:
+
+[![asciicast](https://asciinema.org/a/8EAmEHJZJQTKpRexlqQHuCMzz.svg)](https://asciinema.org/a/8EAmEHJZJQTKpRexlqQHuCMzz)
 
 
 
+**How to install**
+
+1. clone my repo in  any folder on ur system(pref linux :P) 
+
+2. print in cmd next commands from repo root 
+    1. make install
+    2. make package-install
+
+Done now u can play my silly 5 grade games :P with simple commands: brain-even,brain-calc,brain-gcd,brain-progression,brain-prime.
+
+Enjoy
 
 
 

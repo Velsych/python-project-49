@@ -1,6 +1,6 @@
 def random_int():
     from random import randint
-    random_number = randint(1, 100)
+    random_number = randint(1, 101)
     return random_number
 
 
