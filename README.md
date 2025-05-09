@@ -9,7 +9,9 @@ First game in this list is "Even or no" game, u get absolutely random number and
 
 Second game is calculation game, same rules, same punishment if lose ↑_(ΦwΦ)Ψ
 
-Third game is very difficult game about finding common divide number very complicated and scary, advice to use Euclidean method to find :P
+Third game is very difficult game about finding common divide number, very complicated and scary, advice to use Euclidean method to find :P
+
+Four game is very chill and simple u just need to continue progression ＼(￣▽￣)／
 
 __**How it look**__
 1. Even game:
@@ -24,6 +26,9 @@ __**How it look**__
 
 [![asciicast](https://asciinema.org/a/WjNMlrPukdmLov14eLEUX18U2.svg)](https://asciinema.org/a/WjNMlrPukdmLov14eLEUX18U2)
 
+4. Progression game:
+
+[![asciicast](https://asciinema.org/a/7Lm9jZmEKppnq2sxlQmPO4N8C.svg)](https://asciinema.org/a/7Lm9jZmEKppnq2sxlQmPO4N8C)
 
 
 

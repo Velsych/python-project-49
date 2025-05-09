@@ -13,6 +13,10 @@ brain-calc:
 	uv run brain-calc
 
 
+brain-prog:
+	uv run brain-progression
+
+
 build:
 	uv build
 
