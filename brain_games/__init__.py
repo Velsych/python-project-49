@@ -1,4 +1,4 @@
-# from brain_games.cli import welcome_user больше не используем
+from brain_games.cli import welcome_user 
 import brain_games.logic.game_logic as logic
 from brain_games.logic.games_logic.module import user_greet
 from brain_games.logic.games_logic.module_calc import calc_games
@@ -14,5 +14,6 @@ __all__ = (
     "calc_games",
     "gcd_games",
     "progression_games",
-    "prime_games"
+    "prime_games",
+    "welcome_user"
 )   
