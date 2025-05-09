@@ -25,7 +25,7 @@ def gcd_games():
     for _ in range(3):
         numbers = random_for_gcd()
         answer = gcd(numbers)
-        print(f"Question {numbers[0]} {numbers[1]}")
+        print(f"Question: {numbers[0]} {numbers[1]}")
         ans = prompt.integer("Your answer: ")
         if ans != answer:
             logic.defeat(ans, answer, user_name)
