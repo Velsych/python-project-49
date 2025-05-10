@@ -5,7 +5,9 @@ def prime_games():
 
     def is_prime(num):
         answer = "yes"
-        if num % 2 == 0:
+        if num == 2:
+            return answer
+        if num % 2 == 0 or num == 1:
             answer = "no"
         else:
             for i in range(3, num, 2):
