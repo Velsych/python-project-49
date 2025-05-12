@@ -17,16 +17,16 @@ def progression_games():
     
     user_name = logic.hello_username()
     print("What number is missing in the progression?")
-    right_answers = 0
+    no_mistakes = True
     for _ in range(3):
         prog, answer = random_progression()
         print(f'Question: {prog}')
-        ans = prompt.integer("Your answer: ")
-        if ans != answer:
-            logic.defeat(ans, answer, user_name)
+        user_answer = prompt.integer("Your answer: ")
+        if user_answer != answer:
+            logic.defeat(user_answer, answer, user_name)
+            no_mistakes = False
             break
         else:
-            right_answers += 1
             print("Correct!")
-    if right_answers == 3:
+    if no_mistakes:
         logic.congrats(user_name)

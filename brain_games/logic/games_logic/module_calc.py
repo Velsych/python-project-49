@@ -12,7 +12,7 @@ def calc_games():
     
     user_name = logic.hello_username()
     print("What is the result of the expression?")
-    right_answers = 0
+    no_mistakes = True
     for _ in range(3):
         a, b = logic.random_int(), logic.random_int()
         c = random_modifier()
@@ -24,10 +24,12 @@ def calc_games():
             case "-":
                 answer = a - b
         print(f'Question: {a} {c} {b}')
-        ans = prompt.integer("Your answer: ")
-        if ans != answer:
-            logic.defeat(ans, answer, user_name)
+        user_answer = prompt.integer("Your answer: ")
+        if user_answer != answer:
+            logic.defeat(user_answer, answer, user_name)
+            no_mistakes = False
             break
-        right_answers += 1
-    if right_answers == 3:
+        else:
+            print("Correct!")
+    if no_mistakes:
         logic.congrats(user_name)

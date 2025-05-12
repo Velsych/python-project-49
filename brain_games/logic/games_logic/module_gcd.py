@@ -21,17 +21,17 @@ def gcd_games():
     
     user_name = logic.hello_username()
     print("Find the greatest common divisor of given numbers.")
-    right_answers = 0
+    no_mistake = True
     for _ in range(3):
         numbers = random_for_gcd()
         answer = gcd(numbers)
         print(f"Question: {numbers[0]} {numbers[1]}")
-        ans = prompt.integer("Your answer: ")
-        if ans != answer:
-            logic.defeat(ans, answer, user_name)
+        user_answer = prompt.integer("Your answer: ")
+        if user_answer != answer:
+            logic.defeat(user_answer, answer, user_name)
+            no_mistake = False
             break
         else:
             print("Correct!")
-            right_answers += 1
-    if right_answers == 3:
+    if no_mistake:
         logic.congrats(user_name)

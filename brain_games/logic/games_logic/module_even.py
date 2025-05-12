@@ -5,21 +5,21 @@ def even_games():
 
     def even_game():
         print('Answer "yes" if the number is even, otherwise answer "no".')
-        right_answers = 0
+        no_mistakes = True
         for _ in range(3):
             number = logic.random_int()
             answer = "no"
             if number % 2 == 0:
                 answer = "yes"
             print(f'Question: {number}')
-            ans = prompt.string("Your answer: ")
-            if answer == ans:
-                right_answers += 1
-                print("Correct!")
-            else:
-                logic.defeat(ans, answer, user_name)
+            user_answer = prompt.string("Your answer: ")
+            if user_answer != answer:
+                logic.defeat(user_answer, answer, user_name)
+                no_mistakes = False
                 break
-        if right_answers == 3:
+            else:
+                print("Correct!")
+        if no_mistakes:
             logic.congrats(user_name)
             
     user_name = logic.hello_username()
