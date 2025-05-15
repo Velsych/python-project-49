@@ -9,7 +9,7 @@ def generate_question_and_answer():
         shuffle(modifiers)
         return choice(modifiers)
     
-    a, b = randint(1, 50), randint(1, 50) #NOSONAR
+    a, b = randint(1, 50), randint(1, 50)  # NOSONAR
     c = random_modifier()
     match c:
         case "*":
