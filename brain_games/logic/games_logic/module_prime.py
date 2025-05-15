@@ -8,9 +8,9 @@ def generate_question_and_answer():
     match number:
         case 1:
             answer = "no"
-            return answer
+            return answer, number
         case 2:
-            return answer
+            return answer, number
     if number % 2 == 0:
         answer = "no"
     else:
