@@ -1,6 +1,6 @@
-from brain_games import prime_games, user_greet
+from brain_games import logic, module_prime, user_greet
 
 
 def main():
     user_greet()
-    prime_games()
+    logic.game_start(module_prime)

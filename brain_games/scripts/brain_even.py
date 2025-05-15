@@ -1,8 +1,8 @@
-from brain_games import even_games, user_greet
+from brain_games import logic, module_even, user_greet
 
 
 def main():
     user_greet()
-    even_games()
+    logic.game_start(module_even)
 
 

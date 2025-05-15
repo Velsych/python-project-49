@@ -24,7 +24,7 @@ package-install:
 	uv tool install dist/*.whl
 
 
-package-reinstall:
+package-reinstall: build
 	uv tool install --force dist/*.whl
 
 
@@ -34,6 +34,7 @@ lint:
 
 fix:
 	uv run ruff check brain_games --fix
+
 
 
 

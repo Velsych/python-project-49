@@ -1,35 +1,22 @@
-def calc_games():
-    from random import choice, shuffle
+RULE = "What is the result of the expression?"
 
-    import prompt
 
-    from brain_games import logic
+def generate_question_and_answer():
+    from random import choice, randint, shuffle
 
     def random_modifier():
         modifiers = ["*", "+", "-"]
         shuffle(modifiers)
         return choice(modifiers)
     
-    user_name = logic.hello_username()
-    print("What is the result of the expression?")
-    no_mistakes = True
-    for _ in range(3):
-        a, b = logic.random_int(), logic.random_int()
-        c = random_modifier()
-        match c:
-            case "*":
-                answer = a * b
-            case "+":
-                answer = a + b
-            case "-":
-                answer = a - b
-        print(f'Question: {a} {c} {b}')
-        user_answer = prompt.integer("Your answer: ")
-        if user_answer != answer:
-            logic.defeat(user_answer, answer, user_name)
-            no_mistakes = False
-            break
-        else:
-            print("Correct!")
-    if no_mistakes:
-        logic.congrats(user_name)
+    a, b = randint(1, 50), randint(1, 50)
+    c = random_modifier()
+    match c:
+        case "*":
+            answer = a * b
+        case "+":
+            answer = a + b
+        case "-":
+            answer = a - b
+    question = f'{a} {c} {b}'
+    return answer, question
