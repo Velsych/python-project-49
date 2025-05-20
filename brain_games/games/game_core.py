@@ -1,4 +1,7 @@
-def defeat(user_answer, right_answer, user_name):
+
+import prompt
+
+def defeat_message(user_answer, right_answer, user_name):
     print(
         f"'{user_answer}' is wrong answer ;(. " 
         + f"Correct answer was '{right_answer}'."
@@ -6,20 +9,18 @@ def defeat(user_answer, right_answer, user_name):
     print(f"Let's try again, {user_name}!")
 
 
-def congrats(user_name):
+def congrats_message(user_name):
     print(f"Congratulations, {user_name}!")
 
 
-def hello_username():
-    import prompt
+def full_user_greet():
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
     return name
 
 
 def game_start(game_module):
-    import prompt
-    user_name = hello_username()
+    user_name = full_user_greet()
     print(game_module.RULE)
     for _ in range(3):
         answer, question = game_module.generate_question_and_answer()
@@ -29,7 +30,7 @@ def game_start(game_module):
         else:
             user_answer = prompt.integer("Your answer: ")
         if answer != user_answer:
-            defeat(user_answer, answer, user_name)
+            defeat_message(user_answer, answer, user_name)
             return
         print("Correct!")
-    congrats(user_name)
+    congrats_message(user_name)

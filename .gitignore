@@ -3,3 +3,10 @@
 demo.cast
 __pycache__
 temp_bin.py
+main.py
+
+/brain_games/__pycache__
+/brain_games/scripts/__pycache__
+/brain_games/games/__pycache__
+/brain_games/games/games_logic/__pycache__
+/__pycache__

@@ -1,7 +1,10 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Add your description here"
+description = "Series of math games made on python"
+authors = [{name = "Alsy", email="velsych@mail.ru"}]
+classifiers = [
+    "Environment :: Console"]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

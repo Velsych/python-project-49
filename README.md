@@ -8,7 +8,7 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Velsych_python-project-49&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Velsych_python-project-49)
 
 
-**Hello on my first project(almost) on my own**
+### **Hello on my first project(almost) on my own**
 
 My name Alsy im learning python for 1-2.5 months and this my first learning task.
 
@@ -25,7 +25,7 @@ Four game is very chill and simple u just need to continue progression ＼(￣�
 
 fifth game about finding prime number, u get random number and need to say its prime or no, simple, if u know what prime is(i'm no) (－‸ლ)
 
-__**How it look**__
+### __**How it look**__
 1. Even game:
 
 [![asciicast](https://asciinema.org/a/usbBtJCWNy6qQFu2vviQPc9VP.svg)](https://asciinema.org/a/usbBtJCWNy6qQFu2vviQPc9VP)
@@ -48,7 +48,15 @@ __**How it look**__
 
 
 
-**How to install**
+### **How to install**
+0. To play my games and make this thing to work u need to install **uv package manager.** u can read about it [on this link](https://docs.astral.sh/uv/#installation)
+    **TLDR**
+    1. run this in ur linux console:
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    Windows version:
+    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+    U're magnificent
 
 1. clone my repo in  any folder on ur system(pref linux :P) 
 
