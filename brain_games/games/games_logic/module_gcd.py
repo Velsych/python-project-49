@@ -18,8 +18,8 @@ def generate_question_and_answer():
 
     final_string = []
     numbers = []
-    numbers.append(randint(MAX_GEN_NUMBERS[0], MAX_GEN_NUMBERS[1]))
-    numbers.append(randint(MIN_GEN_NUMBERS[0], MIN_GEN_NUMBERS[1]))
+    numbers.append(randint(MAX_GEN_NUMBERS[0], MAX_GEN_NUMBERS[1])) #NOSONAR
+    numbers.append(randint(MIN_GEN_NUMBERS[0], MIN_GEN_NUMBERS[1])) #NOSONAR
     answer = gcd_finder(numbers)
     for i in numbers:
         final_string.append(str(i))
