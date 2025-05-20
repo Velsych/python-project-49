@@ -51,9 +51,15 @@ fifth game about finding prime number, u get random number and need to say its p
 ### **How to install**
 0. To play my games and make this thing to work u need to install **uv package manager.** u can read about it [on this link](https://docs.astral.sh/uv/#installation)
     **TLDR**
+    
+
     1. run this in ur linux console:
+
     curl -LsSf https://astral.sh/uv/install.sh | sh
+
+
     Windows version:
+
     powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
     U're magnificent

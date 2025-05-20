@@ -1,6 +1,7 @@
 
 import prompt
 
+
 def defeat_message(user_answer, right_answer, user_name):
     print(
         f"'{user_answer}' is wrong answer ;(. " 
