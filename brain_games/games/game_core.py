@@ -1,4 +1,4 @@
-
+from brain_games import welcome_user
 import prompt
 
 
@@ -21,7 +21,7 @@ def full_user_greet():
 
 
 def game_start(game_module):
-    user_name = full_user_greet()
+    user_name = welcome_user()
     print(game_module.RULE)
     for _ in range(3):
         answer, question = game_module.generate_question_and_answer()

@@ -1,8 +1,7 @@
-from brain_games import core, module_even, user_greet
+from brain_games import core, module_even
 
 
 def main():
-    user_greet()
     core.game_start(module_even)
 
 

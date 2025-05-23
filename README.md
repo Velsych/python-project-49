@@ -53,7 +53,7 @@ fifth game about finding prime number, u get random number and need to say its p
     **TLDR**
     
 
-    1. run this in ur linux console:
+    run this in ur linux console:
 
     curl -LsSf https://astral.sh/uv/install.sh | sh
 
