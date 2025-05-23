@@ -1,6 +1,5 @@
-from brain_games import welcome_user
 import prompt
-
+from brain_games.cli import welcome_user
 
 def defeat_message(user_answer, right_answer, user_name):
     print(
@@ -14,23 +13,20 @@ def congrats_message(user_name):
     print(f"Congratulations, {user_name}!")
 
 
-def full_user_greet():
-    name = prompt.string("May I have your name? ")
-    print(f'Hello, {name}!')
-    return name
+def user_welcome():
+    print("Welcome to the brain games!")
+    user_name = welcome_user()
+    return user_name  # я сделал это что бы не ломать тесты
 
 
 def game_start(game_module):
-    user_name = welcome_user()
+    user_name = user_welcome()
     print(game_module.RULE)
     for _ in range(3):
         answer, question = game_module.generate_question_and_answer()
         print(f'Question: {question}')
-        if type(answer) is str:
-            user_answer = prompt.string("Your answer: ")
-        else:
-            user_answer = prompt.integer("Your answer: ")
-        if answer != user_answer:
+        user_answer = prompt.string("Your answer: ")
+        if str(answer) != user_answer:
             defeat_message(user_answer, answer, user_name)
             return
         print("Correct!")

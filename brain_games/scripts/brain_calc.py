@@ -1,6 +1,9 @@
-from brain_games import core, module_calc, user_greet
+#!  /.venv/bin/python
+from brain_games import core, module_calc
 
 
 def main():
-    user_greet()
     core.game_start(module_calc)
+
+if __name__ == "__main__":
+    main()

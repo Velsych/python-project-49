@@ -1,6 +1,9 @@
-from brain_games import core, module_prime, user_greet
+from brain_games import core, module_prime
 
 
 def main():
-    user_greet()
     core.game_start(module_prime)
+
+
+if __name__ == "__main__":
+    main()

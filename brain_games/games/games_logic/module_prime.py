@@ -5,29 +5,23 @@ MAX_GEN_NUMBER = 100
 MIN_GEN_NUMBER = 1
 
 
-def check_prime(number):
-    flag = True
+def is_prime(number):
     if number % 2 == 0:
-        flag = False
-    else:
-        for i in range(3, number, 2):
-            if number % i == 0:
-                flag = False
-    return flag
-
+        return False
+    elif number == 1:
+         return False
+    for i in range(3, number, 2):
+        if number % i == 0:
+                return False
+    return True
 
 def generate_question_and_answer():
     answer = "yes"
     number = randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)  # NOSONAR
-    match number:
-        case 1:
-            answer = "no"
-            return answer, number
-        case 2:
-            return answer, number
-    check = check_prime(number)
-    if check is False:
-        answer = "no"
+    if number == 2:
+        return answer, number
+    answer = 'yes' if is_prime(number) else "no"
+
     return answer, number
         
     
