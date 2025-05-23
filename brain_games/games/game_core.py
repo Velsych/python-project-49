@@ -1,5 +1,7 @@
 import prompt
+
 from brain_games.cli import welcome_user
+
 
 def defeat_message(user_answer, right_answer, user_name):
     print(

@@ -15,7 +15,9 @@ def generate_question_and_answer():
     progression_start = randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)  # NOSONAR
     progression.append(progression_start)
     progression_step = randint(MIN_STEP_NUMBER, MAX_STEP_NUMBER)  # NOSONAR
-    progression_missing = randint(MIN_PROGRESSION_LEGNTH,MAX_PROGRESSION_LENGTH - 1)  # NOSONAR
+    progression_missing = randint(MIN_PROGRESSION_LEGNTH,   # NOSONAR
+     MAX_PROGRESSION_LENGTH - 1  # NOSONAR
+     )
 
     for _ in range(MAX_PROGRESSION_LENGTH - 1):
         progression.append(progression[-1] + progression_step)
