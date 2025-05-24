@@ -10,7 +10,6 @@ from brain_games.games.games_logic import (
 
 
 __all__ = (
-    "user_greet",
     "module_even",
     "core",
     "module_calc",
