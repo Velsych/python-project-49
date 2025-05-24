@@ -7,7 +7,7 @@ from brain_games.games.games_logic import (
     module_prime,
     module_progression,
 )
-from brain_games.games.games_logic.module import user_greet
+
 
 __all__ = (
     "user_greet",

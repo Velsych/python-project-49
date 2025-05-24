@@ -2,7 +2,7 @@ from brain_games import core, module_progression
 
 
 def main():
-    core.game_start(module_progression)
+    core.start_game(module_progression)
 
 
 if __name__ == "__main__":
