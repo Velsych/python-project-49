@@ -1,9 +1,17 @@
 from random import randint
 
 RULE = "Find the greatest common divisor of given numbers."
-MAX_GEN_NUMBER = 50
-MIN_GEN_NUMBER = 1
+EASY = {"MIN_GEN_NUMBER": 0,
+        "MAX_GEN_NUMBER": 50
+}
 
+MEDIUM = {"MIN_GEN_NUMBER": 0,
+        "MAX_GEN_NUMBER": 150
+}
+
+HARD = {"MIN_GEN_NUMBER": 0,
+        "MAX_GEN_NUMBER": 200
+}
 
 def find_gcd(number1, number2):
     max_number = max(number1, number2)
@@ -14,10 +22,17 @@ def find_gcd(number1, number2):
     return max_number
 
 
-def generate_question_and_answer():
-
-    number1 = randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)  # NOSONAR
-    number2 = randint(MIN_GEN_NUMBER, MAX_GEN_NUMBER)  # NOSONAR
+def generate_question_and_answer(option = 1):
+    match option:
+        case 1:
+            difficult = EASY
+        case 2:
+            difficult = MEDIUM
+        case 3:
+            difficult = HARD
+    
+    number1 = randint(difficult["MIN_GEN_NUMBER"], difficult["MAX_GEN_NUMBER"])  # NOSONAR
+    number2 = randint(difficult["MIN_GEN_NUMBER"], difficult["MAX_GEN_NUMBER"])  # NOSONAR
     answer = find_gcd(number1, number2)
     question = f"{number1} {number2}"
     return answer, question

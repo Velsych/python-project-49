@@ -8,7 +8,6 @@ from brain_games.games.games_logic import (
     module_progression,
 )
 
-
 __all__ = (
     "module_even",
     "core",
